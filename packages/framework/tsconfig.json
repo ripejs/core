@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "declarationDir": "./dist",
+    "moduleResolution": "NodeNext",
+    "noImplicitAny": true,
+    "declaration": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": false
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
+}
