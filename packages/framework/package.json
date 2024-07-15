@@ -3,7 +3,12 @@
   "packageManager": "yarn@4.3.1",
   "type": "module",
   "module": "dist/index.mjs",
-  "exports": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "node": ">=18",
   "scripts": {
     "build": "rm -rf dist/ && rollup -c",
@@ -14,10 +19,11 @@
     "@tinyhttp/logger": "^2.0.0"
   },
   "devDependencies": {
-    "@rollup/plugin-typescript": "^11.1.6",
-    "rollup": "^4.18.1",
-    "ts-loader": "^9.5.1",
-    "tslib": "^2.6.3",
+    "@rollup/plugin-typescript": "*",
+    "@types/node": "*",
+    "rollup": "*",
+    "ts-loader": "*",
+    "tslib": "*",
     "typescript": "*"
   }
 }

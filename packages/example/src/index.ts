@@ -1,3 +1,5 @@
-import {run} from "@ripejs/framework";
+import {Ripe} from "@ripejs/framework";
 
-run();
+const app = new Ripe();
+
+app.listen(1234);
